@@ -1,0 +1,6 @@
+
+SDKROOT = appletvos
+
+TVOS_DEPLOYMENT_TARGET = 9.0
+
+PRODUCT_NAME = FoundationKit

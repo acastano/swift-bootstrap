@@ -1,0 +1,1803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		83E0E4331D2EAC1A00F0A61B /* Build-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 83E0E4341D2EAC1A00F0A61B /* Build configuration list for PBXAggregateTarget "Build-iOS" */;
+			buildPhases = (
+				83E0E4411D2EACAC00F0A61B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Build-iOS";
+			productName = "Build-iOS";
+		};
+		83E0E4371D2EAC2A00F0A61B /* Build-watchOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 83E0E4381D2EAC2A00F0A61B /* Build configuration list for PBXAggregateTarget "Build-watchOS" */;
+			buildPhases = (
+				83E0E4401D2EAC9700F0A61B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Build-watchOS";
+			productName = "Build-watchOS";
+		};
+		83E0E43B1D2EAC3300F0A61B /* Build-tvOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 83E0E43C1D2EAC3300F0A61B /* Build configuration list for PBXAggregateTarget "Build-tvOS" */;
+			buildPhases = (
+				83E0E43F1D2EAC8300F0A61B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Build-tvOS";
+			productName = "Build-tvOS";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		41416C981E4CA8D100D9734B /* FoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41416C951E4CA8D100D9734B /* FoundationKit.framework */; };
+		41416C991E4CA8E000D9734B /* FoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41416C8F1E4CA8D100D9734B /* FoundationKit.framework */; };
+		41416C9A1E4CA8E700D9734B /* FoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41416C921E4CA8D100D9734B /* FoundationKit.framework */; };
+		83E0E3DD1D2EAA0B00F0A61B /* PersistenceKit-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E0E3D91D2EAA0B00F0A61B /* PersistenceKit-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83E0E3FF1D2EAB1400F0A61B /* PersistenceKit-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E0E3D91D2EAA0B00F0A61B /* PersistenceKit-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83E0E4001D2EAB1400F0A61B /* PersistenceKit-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E0E3D91D2EAA0B00F0A61B /* PersistenceKit-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83E0E41F1D2EABAA00F0A61B /* Local+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E4041D2EABAA00F0A61B /* Local+Helpers.swift */; };
+		83E0E4201D2EABAA00F0A61B /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E4051D2EABAA00F0A61B /* Local.swift */; };
+		83E0E4211D2EABAA00F0A61B /* LocalConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E4061D2EABAA00F0A61B /* LocalConfiguration.swift */; };
+		83E0E4221D2EABAA00F0A61B /* LocalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E4071D2EABAA00F0A61B /* LocalType.swift */; };
+		83E0E42C1D2EABAA00F0A61B /* NSManagedObject+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E4141D2EABAA00F0A61B /* NSManagedObject+Utils.swift */; };
+		83E4404A1D2FE92A004427CE /* PersistenceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0E3B21D2EA99B00F0A61B /* PersistenceKit.framework */; };
+		83E440591D2FE952004427CE /* PersistenceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0E3CD1D2EA9B100F0A61B /* PersistenceKit.framework */; };
+		83E4408B1D2FEA68004427CE /* Local+HelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E4407E1D2FEA47004427CE /* Local+HelpersTests.swift */; };
+		83E4408C1D2FEA68004427CE /* LocalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E4407F1D2FEA47004427CE /* LocalTests.swift */; };
+		83E4408D1D2FEA68004427CE /* NSManagedObject+UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E440821D2FEA47004427CE /* NSManagedObject+UtilsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83E4404B1D2FE92A004427CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E0E3A71D2EA98E00F0A61B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83E0E3B11D2EA99B00F0A61B;
+			remoteInfo = "PersistenceKit-iOS";
+		};
+		83E4405A1D2FE952004427CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E0E3A71D2EA98E00F0A61B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83E0E3CC1D2EA9B100F0A61B;
+			remoteInfo = "PersistenceKit-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41416C8F1E4CA8D100D9734B /* FoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FoundationKit.framework; sourceTree = "<group>"; };
+		41416C921E4CA8D100D9734B /* FoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FoundationKit.framework; sourceTree = "<group>"; };
+		41416C951E4CA8D100D9734B /* FoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FoundationKit.framework; sourceTree = "<group>"; };
+		836810971D379406001EB153 /* iOSBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSBuildConfig.xcconfig; sourceTree = "<group>"; };
+		836810981D379406001EB153 /* iOSDebugBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSDebugBuildConfig.xcconfig; sourceTree = "<group>"; };
+		836810991D379406001EB153 /* iOSReleaseBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSReleaseBuildConfig.xcconfig; sourceTree = "<group>"; };
+		8368109F1D379409001EB153 /* tvOSBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tvOSBuildConfig.xcconfig; sourceTree = "<group>"; };
+		836810A01D379409001EB153 /* tvOSDebugBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tvOSDebugBuildConfig.xcconfig; sourceTree = "<group>"; };
+		836810A11D379409001EB153 /* tvOSReleaseBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tvOSReleaseBuildConfig.xcconfig; sourceTree = "<group>"; };
+		836810A71D37940E001EB153 /* watchOSBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = watchOSBuildConfig.xcconfig; sourceTree = "<group>"; };
+		836810A81D37940E001EB153 /* watchOSDebugBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = watchOSDebugBuildConfig.xcconfig; sourceTree = "<group>"; };
+		836810A91D37940E001EB153 /* watchOSReleaseBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = watchOSReleaseBuildConfig.xcconfig; sourceTree = "<group>"; };
+		836810C61D37A048001EB153 /* iOSDebugTestConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSDebugTestConfig.xcconfig; sourceTree = "<group>"; };
+		836810C71D37A048001EB153 /* iOSReleaseTestConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSReleaseTestConfig.xcconfig; sourceTree = "<group>"; };
+		836810C81D37A048001EB153 /* iOSTestConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSTestConfig.xcconfig; sourceTree = "<group>"; };
+		836810CC1D37A04C001EB153 /* tvOSDebugTestConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tvOSDebugTestConfig.xcconfig; sourceTree = "<group>"; };
+		836810CD1D37A04C001EB153 /* tvOSReleaseTestConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tvOSReleaseTestConfig.xcconfig; sourceTree = "<group>"; };
+		836810CE1D37A04C001EB153 /* tvOSTestConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tvOSTestConfig.xcconfig; sourceTree = "<group>"; };
+		83E0E3B21D2EA99B00F0A61B /* PersistenceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E0E3C01D2EA9A500F0A61B /* PersistenceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E0E3CD1D2EA9B100F0A61B /* PersistenceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E0E3D61D2EAA0B00F0A61B /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		83E0E3D71D2EAA0B00F0A61B /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		83E0E3D81D2EAA0B00F0A61B /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
+		83E0E3D91D2EAA0B00F0A61B /* PersistenceKit-watchOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PersistenceKit-watchOS.h"; sourceTree = "<group>"; };
+		83E0E4041D2EABAA00F0A61B /* Local+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Local+Helpers.swift"; sourceTree = "<group>"; };
+		83E0E4051D2EABAA00F0A61B /* Local.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
+		83E0E4061D2EABAA00F0A61B /* LocalConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalConfiguration.swift; sourceTree = "<group>"; };
+		83E0E4071D2EABAA00F0A61B /* LocalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalType.swift; sourceTree = "<group>"; };
+		83E0E4141D2EABAA00F0A61B /* NSManagedObject+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Utils.swift"; sourceTree = "<group>"; };
+		83E0E49E1D2FBC7800F0A61B /* iOSConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSConfig.xcconfig; sourceTree = "<group>"; };
+		83E0E49F1D2FBC7800F0A61B /* iOSDebugConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSDebugConfig.xcconfig; sourceTree = "<group>"; };
+		83E0E4A01D2FBC7800F0A61B /* iOSReleaseConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSReleaseConfig.xcconfig; sourceTree = "<group>"; };
+		83E0E4A21D2FBC7800F0A61B /* tvOSConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tvOSConfig.xcconfig; sourceTree = "<group>"; };
+		83E0E4A31D2FBC7800F0A61B /* tvOSDebugConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tvOSDebugConfig.xcconfig; sourceTree = "<group>"; };
+		83E0E4A41D2FBC7800F0A61B /* tvOSReleaseConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tvOSReleaseConfig.xcconfig; sourceTree = "<group>"; };
+		83E0E4A61D2FBC7800F0A61B /* watchOSConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = watchOSConfig.xcconfig; sourceTree = "<group>"; };
+		83E0E4A71D2FBC7800F0A61B /* watchOSDebugConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = watchOSDebugConfig.xcconfig; sourceTree = "<group>"; };
+		83E0E4A81D2FBC7800F0A61B /* watchOSReleaseConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = watchOSReleaseConfig.xcconfig; sourceTree = "<group>"; };
+		83E440451D2FE92A004427CE /* PersistenceKitTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PersistenceKitTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E440541D2FE952004427CE /* PersistenceKitTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PersistenceKitTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E4407A1D2FEA47004427CE /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		83E4407E1D2FEA47004427CE /* Local+HelpersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Local+HelpersTests.swift"; sourceTree = "<group>"; };
+		83E4407F1D2FEA47004427CE /* LocalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalTests.swift; sourceTree = "<group>"; };
+		83E440821D2FEA47004427CE /* NSManagedObject+UtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+UtilsTests.swift"; sourceTree = "<group>"; };
+		83E440841D2FEA47004427CE /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83E0E3AE1D2EA99B00F0A61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41416C981E4CA8D100D9734B /* FoundationKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E0E3BC1D2EA9A500F0A61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41416C991E4CA8E000D9734B /* FoundationKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E0E3C91D2EA9B100F0A61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41416C9A1E4CA8E700D9734B /* FoundationKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E440421D2FE92A004427CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E4404A1D2FE92A004427CE /* PersistenceKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E440511D2FE952004427CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E440591D2FE952004427CE /* PersistenceKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41416C8D1E4CA8D100D9734B /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				41416C8E1E4CA8D100D9734B /* Core */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		41416C8E1E4CA8D100D9734B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				41416C8F1E4CA8D100D9734B /* FoundationKit.framework */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		41416C901E4CA8D100D9734B /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				41416C911E4CA8D100D9734B /* Core */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		41416C911E4CA8D100D9734B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				41416C921E4CA8D100D9734B /* FoundationKit.framework */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		41416C931E4CA8D100D9734B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				41416C941E4CA8D100D9734B /* Core */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		41416C941E4CA8D100D9734B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				41416C951E4CA8D100D9734B /* FoundationKit.framework */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		836810961D379406001EB153 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				836810971D379406001EB153 /* iOSBuildConfig.xcconfig */,
+				836810981D379406001EB153 /* iOSDebugBuildConfig.xcconfig */,
+				836810991D379406001EB153 /* iOSReleaseBuildConfig.xcconfig */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		8368109A1D379406001EB153 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				836810C61D37A048001EB153 /* iOSDebugTestConfig.xcconfig */,
+				836810C71D37A048001EB153 /* iOSReleaseTestConfig.xcconfig */,
+				836810C81D37A048001EB153 /* iOSTestConfig.xcconfig */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		8368109E1D379409001EB153 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				8368109F1D379409001EB153 /* tvOSBuildConfig.xcconfig */,
+				836810A01D379409001EB153 /* tvOSDebugBuildConfig.xcconfig */,
+				836810A11D379409001EB153 /* tvOSReleaseBuildConfig.xcconfig */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		836810A21D379409001EB153 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				836810CC1D37A04C001EB153 /* tvOSDebugTestConfig.xcconfig */,
+				836810CD1D37A04C001EB153 /* tvOSReleaseTestConfig.xcconfig */,
+				836810CE1D37A04C001EB153 /* tvOSTestConfig.xcconfig */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		836810A61D37940E001EB153 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				836810A71D37940E001EB153 /* watchOSBuildConfig.xcconfig */,
+				836810A81D37940E001EB153 /* watchOSDebugBuildConfig.xcconfig */,
+				836810A91D37940E001EB153 /* watchOSReleaseBuildConfig.xcconfig */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		83E0E3A61D2EA98E00F0A61B = {
+			isa = PBXGroup;
+			children = (
+				83E0E3D51D2EAA0B00F0A61B /* Sources */,
+				83E0E3B31D2EA99B00F0A61B /* Products */,
+				83E440761D2FEA47004427CE /* Unit Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		83E0E3B31D2EA99B00F0A61B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E3B21D2EA99B00F0A61B /* PersistenceKit.framework */,
+				83E0E3C01D2EA9A500F0A61B /* PersistenceKit.framework */,
+				83E0E3CD1D2EA9B100F0A61B /* PersistenceKit.framework */,
+				83E440451D2FE92A004427CE /* PersistenceKitTests-iOS.xctest */,
+				83E440541D2FE952004427CE /* PersistenceKitTests-tvOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83E0E3D51D2EAA0B00F0A61B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E4011D2EABAA00F0A61B /* Classes */,
+				83E0E4151D2EABAA00F0A61B /* Vendor */,
+				83E0E49C1D2FBC7800F0A61B /* Config */,
+				83E0E3D61D2EAA0B00F0A61B /* Info-iOS.plist */,
+				83E0E3D71D2EAA0B00F0A61B /* Info-tvOS.plist */,
+				83E0E3D81D2EAA0B00F0A61B /* Info-watchOS.plist */,
+				83E0E3D91D2EAA0B00F0A61B /* PersistenceKit-watchOS.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		83E0E4011D2EABAA00F0A61B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E4021D2EABAA00F0A61B /* Common */,
+				83E0E4121D2EABAA00F0A61B /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		83E0E4021D2EABAA00F0A61B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E4031D2EABAA00F0A61B /* CoreData */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		83E0E4031D2EABAA00F0A61B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E4041D2EABAA00F0A61B /* Local+Helpers.swift */,
+				83E0E4051D2EABAA00F0A61B /* Local.swift */,
+				83E0E4061D2EABAA00F0A61B /* LocalConfiguration.swift */,
+				83E0E4071D2EABAA00F0A61B /* LocalType.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		83E0E4121D2EABAA00F0A61B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E4131D2EABAA00F0A61B /* CoreData */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83E0E4131D2EABAA00F0A61B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E4141D2EABAA00F0A61B /* NSManagedObject+Utils.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		83E0E4151D2EABAA00F0A61B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				41416C8D1E4CA8D100D9734B /* watchOS */,
+				41416C901E4CA8D100D9734B /* tvOS */,
+				41416C931E4CA8D100D9734B /* iOS */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		83E0E49C1D2FBC7800F0A61B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E49D1D2FBC7800F0A61B /* iOS */,
+				83E0E4A11D2FBC7800F0A61B /* tvOS */,
+				83E0E4A51D2FBC7800F0A61B /* watchOS */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		83E0E49D1D2FBC7800F0A61B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E49E1D2FBC7800F0A61B /* iOSConfig.xcconfig */,
+				83E0E49F1D2FBC7800F0A61B /* iOSDebugConfig.xcconfig */,
+				83E0E4A01D2FBC7800F0A61B /* iOSReleaseConfig.xcconfig */,
+				836810961D379406001EB153 /* Build */,
+				8368109A1D379406001EB153 /* Unit Tests */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		83E0E4A11D2FBC7800F0A61B /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E4A21D2FBC7800F0A61B /* tvOSConfig.xcconfig */,
+				83E0E4A31D2FBC7800F0A61B /* tvOSDebugConfig.xcconfig */,
+				83E0E4A41D2FBC7800F0A61B /* tvOSReleaseConfig.xcconfig */,
+				8368109E1D379409001EB153 /* Build */,
+				836810A21D379409001EB153 /* Unit Tests */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		83E0E4A51D2FBC7800F0A61B /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E4A61D2FBC7800F0A61B /* watchOSConfig.xcconfig */,
+				83E0E4A71D2FBC7800F0A61B /* watchOSDebugConfig.xcconfig */,
+				83E0E4A81D2FBC7800F0A61B /* watchOSReleaseConfig.xcconfig */,
+				836810A61D37940E001EB153 /* Build */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		83E440761D2FEA47004427CE /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				83E440771D2FEA47004427CE /* Common */,
+				83E440791D2FEA47004427CE /* iOS */,
+				83E440831D2FEA47004427CE /* tvOS */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		83E440771D2FEA47004427CE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				83E440781D2FEA47004427CE /* Test Cases */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		83E440781D2FEA47004427CE /* Test Cases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Test Cases";
+			sourceTree = "<group>";
+		};
+		83E440791D2FEA47004427CE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				83E4407A1D2FEA47004427CE /* Info-iOS.plist */,
+				83E4407B1D2FEA47004427CE /* Test Cases */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		83E4407B1D2FEA47004427CE /* Test Cases */ = {
+			isa = PBXGroup;
+			children = (
+				83E4407C1D2FEA47004427CE /* Common */,
+				83E440801D2FEA47004427CE /* Extensions */,
+			);
+			path = "Test Cases";
+			sourceTree = "<group>";
+		};
+		83E4407C1D2FEA47004427CE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				83E4407D1D2FEA47004427CE /* CoreData */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		83E4407D1D2FEA47004427CE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				83E4407E1D2FEA47004427CE /* Local+HelpersTests.swift */,
+				83E4407F1D2FEA47004427CE /* LocalTests.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		83E440801D2FEA47004427CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83E440811D2FEA47004427CE /* CoreData */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83E440811D2FEA47004427CE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				83E440821D2FEA47004427CE /* NSManagedObject+UtilsTests.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		83E440831D2FEA47004427CE /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				83E440841D2FEA47004427CE /* Info-tvOS.plist */,
+				83E440851D2FEA47004427CE /* Test Cases */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		83E440851D2FEA47004427CE /* Test Cases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Test Cases";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		83E0E3AF1D2EA99B00F0A61B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E0E3DD1D2EAA0B00F0A61B /* PersistenceKit-watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E0E3BD1D2EA9A500F0A61B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E0E3FF1D2EAB1400F0A61B /* PersistenceKit-watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E0E3CA1D2EA9B100F0A61B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E0E4001D2EAB1400F0A61B /* PersistenceKit-watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		83E0E3B11D2EA99B00F0A61B /* PersistenceKit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E0E3B81D2EA99B00F0A61B /* Build configuration list for PBXNativeTarget "PersistenceKit-iOS" */;
+			buildPhases = (
+				83E0E3AD1D2EA99B00F0A61B /* Sources */,
+				83E0E3AE1D2EA99B00F0A61B /* Frameworks */,
+				83E0E3AF1D2EA99B00F0A61B /* Headers */,
+				83E0E3B01D2EA99B00F0A61B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PersistenceKit-iOS";
+			productName = "PersistenceKit-iOS";
+			productReference = 83E0E3B21D2EA99B00F0A61B /* PersistenceKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83E0E3BF1D2EA9A500F0A61B /* PersistenceKit-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E0E3C51D2EA9A500F0A61B /* Build configuration list for PBXNativeTarget "PersistenceKit-watchOS" */;
+			buildPhases = (
+				83E0E3BB1D2EA9A500F0A61B /* Sources */,
+				83E0E3BC1D2EA9A500F0A61B /* Frameworks */,
+				83E0E3BD1D2EA9A500F0A61B /* Headers */,
+				83E0E3BE1D2EA9A500F0A61B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PersistenceKit-watchOS";
+			productName = "PersistenceKit-watchOS";
+			productReference = 83E0E3C01D2EA9A500F0A61B /* PersistenceKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83E0E3CC1D2EA9B100F0A61B /* PersistenceKit-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E0E3D21D2EA9B100F0A61B /* Build configuration list for PBXNativeTarget "PersistenceKit-tvOS" */;
+			buildPhases = (
+				83E0E3C81D2EA9B100F0A61B /* Sources */,
+				83E0E3C91D2EA9B100F0A61B /* Frameworks */,
+				83E0E3CA1D2EA9B100F0A61B /* Headers */,
+				83E0E3CB1D2EA9B100F0A61B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PersistenceKit-tvOS";
+			productName = "PersistenceKit-tvOS";
+			productReference = 83E0E3CD1D2EA9B100F0A61B /* PersistenceKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83E440441D2FE92A004427CE /* PersistenceKitTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E4404F1D2FE92A004427CE /* Build configuration list for PBXNativeTarget "PersistenceKitTests-iOS" */;
+			buildPhases = (
+				83E440411D2FE92A004427CE /* Sources */,
+				83E440421D2FE92A004427CE /* Frameworks */,
+				83E440431D2FE92A004427CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83E4404C1D2FE92A004427CE /* PBXTargetDependency */,
+			);
+			name = "PersistenceKitTests-iOS";
+			productName = "PersistenceKitTests-iOS";
+			productReference = 83E440451D2FE92A004427CE /* PersistenceKitTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83E440531D2FE952004427CE /* PersistenceKitTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E4405C1D2FE952004427CE /* Build configuration list for PBXNativeTarget "PersistenceKitTests-tvOS" */;
+			buildPhases = (
+				83E440501D2FE952004427CE /* Sources */,
+				83E440511D2FE952004427CE /* Frameworks */,
+				83E440521D2FE952004427CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83E4405B1D2FE952004427CE /* PBXTargetDependency */,
+			);
+			name = "PersistenceKitTests-tvOS";
+			productName = "PersistenceKitTests-tvOS";
+			productReference = 83E440541D2FE952004427CE /* PersistenceKitTests-tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83E0E3A71D2EA98E00F0A61B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					83E0E3B11D2EA99B00F0A61B = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
+					};
+					83E0E3BF1D2EA9A500F0A61B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					83E0E3CC1D2EA9B100F0A61B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					83E0E4331D2EAC1A00F0A61B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					83E0E4371D2EAC2A00F0A61B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					83E0E43B1D2EAC3300F0A61B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					83E440441D2FE92A004427CE = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
+					};
+					83E440531D2FE952004427CE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 83E0E3AA1D2EA98E00F0A61B /* Build configuration list for PBXProject "PersistenceKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 83E0E3A61D2EA98E00F0A61B;
+			productRefGroup = 83E0E3B31D2EA99B00F0A61B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83E0E3B11D2EA99B00F0A61B /* PersistenceKit-iOS */,
+				83E0E3BF1D2EA9A500F0A61B /* PersistenceKit-watchOS */,
+				83E0E3CC1D2EA9B100F0A61B /* PersistenceKit-tvOS */,
+				83E0E4331D2EAC1A00F0A61B /* Build-iOS */,
+				83E0E4371D2EAC2A00F0A61B /* Build-watchOS */,
+				83E0E43B1D2EAC3300F0A61B /* Build-tvOS */,
+				83E440441D2FE92A004427CE /* PersistenceKitTests-iOS */,
+				83E440531D2FE952004427CE /* PersistenceKitTests-tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83E0E3B01D2EA99B00F0A61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E0E3BE1D2EA9A500F0A61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E0E3CB1D2EA9B100F0A61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E440431D2FE92A004427CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E440521D2FE952004427CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83E0E43F1D2EAC8300F0A61B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=true\n\nFRAMEWORK_NAME=\"${PRODUCT_NAME}\"\n\nSCHEME=\"PersistenceKit-tvOS\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-appletvsimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-appletvos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-tvuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${SCHEME} -sdk appletvos -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-appletvos 2>&1\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${SCHEME} -sdk appletvsimulator -configuration ${CONFIGURATION} clean build  -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=latest' CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-appletvsimulator 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      if [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n                                                                      cp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      ######################\n                                                                      # On Release, copy the result to release directory\n                                                                      ######################\n                                                                      OUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-tvuniversal/\"\n                                                                      \n                                                                      rm -rf \"$OUTPUT_DIR\"\n                                                                      mkdir -p \"$OUTPUT_DIR\"\n                                                                      \n                                                                      cp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n                                                                      \n                                                                      if [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n                                                                      open \"${OUTPUT_DIR}/\"\n                                                                      fi";
+		};
+		83E0E4401D2EAC9700F0A61B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=true\n\nFRAMEWORK_NAME=\"${PRODUCT_NAME}\"\n\nSCHEME=\"PersistenceKit-watchOS\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-watchsimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-watchos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-watchuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${SCHEME} -sdk watchos -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-watchos 2>&1\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${SCHEME} -sdk watchsimulator -configuration ${CONFIGURATION} clean build  -destination 'platform=watchOS Simulator,name=Apple Watch - 42mm' CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-watchsimulator 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      if [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n                                                                      cp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      ######################\n                                                                      # On Release, copy the result to release directory\n                                                                      ######################\n                                                                      OUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-watchuniversal/\"\n                                                                      \n                                                                      rm -rf \"$OUTPUT_DIR\"\n                                                                      mkdir -p \"$OUTPUT_DIR\"\n                                                                      \n                                                                      cp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n                                                                      \n                                                                      if [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n                                                                      open \"${OUTPUT_DIR}/\"\n                                                                      fi";
+		};
+		83E0E4411D2EACAC00F0A61B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=true\n\nFRAMEWORK_NAME=\"${PRODUCT_NAME}\"\n\nSCHEME=\"PersistenceKit-iOS\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${SCHEME} -sdk iphoneos -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos 2>&1\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${SCHEME} -sdk iphonesimulator -configuration ${CONFIGURATION} clean build  -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest' CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      if [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n                                                                      cp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      ######################\n                                                                      # On Release, copy the result to release directory\n                                                                      ######################\n                                                                      OUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\n                                                                      \n                                                                      rm -rf \"$OUTPUT_DIR\"\n                                                                      mkdir -p \"$OUTPUT_DIR\"\n                                                                      \n                                                                      cp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n                                                                      \n                                                                      if [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n                                                                      open \"${OUTPUT_DIR}/\"\n                                                                      fi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83E0E3AD1D2EA99B00F0A61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E0E41F1D2EABAA00F0A61B /* Local+Helpers.swift in Sources */,
+				83E0E4201D2EABAA00F0A61B /* Local.swift in Sources */,
+				83E0E4211D2EABAA00F0A61B /* LocalConfiguration.swift in Sources */,
+				83E0E4221D2EABAA00F0A61B /* LocalType.swift in Sources */,
+				83E0E42C1D2EABAA00F0A61B /* NSManagedObject+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E0E3BB1D2EA9A500F0A61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E0E3C81D2EA9B100F0A61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E440411D2FE92A004427CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E4408B1D2FEA68004427CE /* Local+HelpersTests.swift in Sources */,
+				83E4408C1D2FEA68004427CE /* LocalTests.swift in Sources */,
+				83E4408D1D2FEA68004427CE /* NSManagedObject+UtilsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E440501D2FE952004427CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83E4404C1D2FE92A004427CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83E0E3B11D2EA99B00F0A61B /* PersistenceKit-iOS */;
+			targetProxy = 83E4404B1D2FE92A004427CE /* PBXContainerItemProxy */;
+		};
+		83E4405B1D2FE952004427CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83E0E3CC1D2EA9B100F0A61B /* PersistenceKit-tvOS */;
+			targetProxy = 83E4405A1D2FE952004427CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		41B64C161E643D23000FE6F5 /* DebugProd */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = DebugProd;
+		};
+		41B64C171E643D23000FE6F5 /* DebugProd */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E0E49F1D2FBC7800F0A61B /* iOSDebugConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = DebugProd;
+		};
+		41B64C181E643D23000FE6F5 /* DebugProd */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E0E4A71D2FBC7800F0A61B /* watchOSDebugConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Sources/Info-watchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = DebugProd;
+		};
+		41B64C191E643D23000FE6F5 /* DebugProd */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E0E4A31D2FBC7800F0A61B /* tvOSDebugConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = DebugProd;
+		};
+		41B64C1A1E643D23000FE6F5 /* DebugProd */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810981D379406001EB153 /* iOSDebugBuildConfig.xcconfig */;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				PRODUCT_NAME = PersistenceKit;
+			};
+			name = DebugProd;
+		};
+		41B64C1B1E643D23000FE6F5 /* DebugProd */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810A81D37940E001EB153 /* watchOSDebugBuildConfig.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = PersistenceKit;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = DebugProd;
+		};
+		41B64C1C1E643D23000FE6F5 /* DebugProd */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810A01D379409001EB153 /* tvOSDebugBuildConfig.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = PersistenceKit;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = DebugProd;
+		};
+		41B64C1D1E643D23000FE6F5 /* DebugProd */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810C61D37A048001EB153 /* iOSDebugTestConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Unit Tests/iOS/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = DebugProd;
+		};
+		41B64C1E1E643D23000FE6F5 /* DebugProd */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810CC1D37A04C001EB153 /* tvOSDebugTestConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Unit Tests/tvOS/Info-tvOS.plist";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = DebugProd;
+		};
+		83E0E3AB1D2EA98E00F0A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		83E0E3AC1D2EA98E00F0A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		83E0E3B91D2EA99B00F0A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E0E49F1D2FBC7800F0A61B /* iOSDebugConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83E0E3BA1D2EA99B00F0A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E0E4A01D2FBC7800F0A61B /* iOSReleaseConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83E0E3C61D2EA9A500F0A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E0E4A71D2FBC7800F0A61B /* watchOSDebugConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Sources/Info-watchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83E0E3C71D2EA9A500F0A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E0E4A81D2FBC7800F0A61B /* watchOSReleaseConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Sources/Info-watchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83E0E3D31D2EA9B100F0A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E0E4A31D2FBC7800F0A61B /* tvOSDebugConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83E0E3D41D2EA9B100F0A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E0E4A41D2FBC7800F0A61B /* tvOSReleaseConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83E0E4351D2EAC1A00F0A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810981D379406001EB153 /* iOSDebugBuildConfig.xcconfig */;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				PRODUCT_NAME = PersistenceKit;
+			};
+			name = Debug;
+		};
+		83E0E4361D2EAC1A00F0A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810991D379406001EB153 /* iOSReleaseBuildConfig.xcconfig */;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				PRODUCT_NAME = PersistenceKit;
+			};
+			name = Release;
+		};
+		83E0E4391D2EAC2A00F0A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810A81D37940E001EB153 /* watchOSDebugBuildConfig.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = PersistenceKit;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		83E0E43A1D2EAC2A00F0A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810A91D37940E001EB153 /* watchOSReleaseBuildConfig.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = PersistenceKit;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		83E0E43D1D2EAC3300F0A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810A01D379409001EB153 /* tvOSDebugBuildConfig.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = PersistenceKit;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		83E0E43E1D2EAC3300F0A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810A11D379409001EB153 /* tvOSReleaseBuildConfig.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = PersistenceKit;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		83E4404D1D2FE92A004427CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810C61D37A048001EB153 /* iOSDebugTestConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Unit Tests/iOS/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		83E4404E1D2FE92A004427CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810C71D37A048001EB153 /* iOSReleaseTestConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Unit Tests/iOS/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83E4405D1D2FE952004427CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810CC1D37A04C001EB153 /* tvOSDebugTestConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Unit Tests/tvOS/Info-tvOS.plist";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		83E4405E1D2FE952004427CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836810CD1D37A04C001EB153 /* tvOSReleaseTestConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Unit Tests/tvOS/Info-tvOS.plist";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83E0E3AA1D2EA98E00F0A61B /* Build configuration list for PBXProject "PersistenceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E0E3AB1D2EA98E00F0A61B /* Debug */,
+				41B64C161E643D23000FE6F5 /* DebugProd */,
+				83E0E3AC1D2EA98E00F0A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E0E3B81D2EA99B00F0A61B /* Build configuration list for PBXNativeTarget "PersistenceKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E0E3B91D2EA99B00F0A61B /* Debug */,
+				41B64C171E643D23000FE6F5 /* DebugProd */,
+				83E0E3BA1D2EA99B00F0A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E0E3C51D2EA9A500F0A61B /* Build configuration list for PBXNativeTarget "PersistenceKit-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E0E3C61D2EA9A500F0A61B /* Debug */,
+				41B64C181E643D23000FE6F5 /* DebugProd */,
+				83E0E3C71D2EA9A500F0A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E0E3D21D2EA9B100F0A61B /* Build configuration list for PBXNativeTarget "PersistenceKit-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E0E3D31D2EA9B100F0A61B /* Debug */,
+				41B64C191E643D23000FE6F5 /* DebugProd */,
+				83E0E3D41D2EA9B100F0A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E0E4341D2EAC1A00F0A61B /* Build configuration list for PBXAggregateTarget "Build-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E0E4351D2EAC1A00F0A61B /* Debug */,
+				41B64C1A1E643D23000FE6F5 /* DebugProd */,
+				83E0E4361D2EAC1A00F0A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E0E4381D2EAC2A00F0A61B /* Build configuration list for PBXAggregateTarget "Build-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E0E4391D2EAC2A00F0A61B /* Debug */,
+				41B64C1B1E643D23000FE6F5 /* DebugProd */,
+				83E0E43A1D2EAC2A00F0A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E0E43C1D2EAC3300F0A61B /* Build configuration list for PBXAggregateTarget "Build-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E0E43D1D2EAC3300F0A61B /* Debug */,
+				41B64C1C1E643D23000FE6F5 /* DebugProd */,
+				83E0E43E1D2EAC3300F0A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E4404F1D2FE92A004427CE /* Build configuration list for PBXNativeTarget "PersistenceKitTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E4404D1D2FE92A004427CE /* Debug */,
+				41B64C1D1E643D23000FE6F5 /* DebugProd */,
+				83E4404E1D2FE92A004427CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E4405C1D2FE952004427CE /* Build configuration list for PBXNativeTarget "PersistenceKitTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E4405D1D2FE952004427CE /* Debug */,
+				41B64C1E1E643D23000FE6F5 /* DebugProd */,
+				83E4405E1D2FE952004427CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83E0E3A71D2EA98E00F0A61B /* Project object */;
+}

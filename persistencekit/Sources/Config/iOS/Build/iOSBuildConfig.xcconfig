@@ -1,0 +1,6 @@
+
+SDKROOT = iphoneos
+
+IPHONEOS_DEPLOYMENT_TARGET = 8.4
+
+PRODUCT_NAME = PersistenceKit

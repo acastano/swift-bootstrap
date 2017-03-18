@@ -1,0 +1,4 @@
+
+#include "tvOSBuildConfig.xcconfig"
+
+CODE_SIGN_IDENTITY = 

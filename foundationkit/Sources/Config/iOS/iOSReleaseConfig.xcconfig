@@ -1,0 +1,14 @@
+
+#include "iOSConfig.xcconfig"
+
+CODE_SIGN_IDENTITY =
+
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = 
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+VALIDATE_PRODUCT = YES
+
+ENABLE_NS_ASSERTIONS = NO
+
+MTL_ENABLE_DEBUG_INFO = NO

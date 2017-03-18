@@ -1,0 +1,10 @@
+framework module FoundationKit {
+  umbrella header "FoundationKit.h"
+
+  export *
+  module * { export * }
+}
+
+module FoundationKit.Swift {
+    header "FoundationKit-Swift.h"
+}
