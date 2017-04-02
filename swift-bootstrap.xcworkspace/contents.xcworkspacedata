@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:userinterfacekit/UserInterfaceKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:persistencekit/PersistenceKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:networkingkit/NetworkingKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:foundationkit/FoundationKit.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -75,9 +75,9 @@ import CoreGraphics
         
         outerColor.set()
         
-        context?.addArc(center: CGPoint(x:frame.size.width / 2, y: frame.size.height / 2), radius: outerCircleRadius, startAngle: 0.0, endAngle: CGFloat(M_PI * 2.0), clockwise: true)
+        context?.addArc(center: CGPoint(x:frame.size.width / 2, y: frame.size.height / 2), radius: outerCircleRadius, startAngle: 0.0, endAngle: CGFloat(.pi * 2.0), clockwise: true)
         
-        context?.strokePath();
+        context?.strokePath()
         
     }
     
@@ -87,10 +87,10 @@ import CoreGraphics
         
         context?.setFillColor(innerColor.cgColor)
         
-        context?.addArc(center: CGPoint(x:frame.size.width / 2, y: frame.size.height / 2), radius: innerCircleRadius, startAngle: 0.0, endAngle: CGFloat(M_PI * 2.0), clockwise: true)
+        context?.addArc(center: CGPoint(x:frame.size.width / 2, y: frame.size.height / 2), radius: innerCircleRadius, startAngle: 0.0, endAngle: CGFloat(.pi * 2.0), clockwise: true)
 
         context?.fillPath()
-        
+                
     }
 
 }

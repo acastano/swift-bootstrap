@@ -69,7 +69,7 @@ public extension Date {
             
             let text = components.day == 1 ? NSLocalizedString("day", comment:"") : NSLocalizedString("days", comment:"")
             
-            day = " \(components.day) " + text
+            day = " \(cDay) " + text
             
         }
         
@@ -81,7 +81,7 @@ public extension Date {
             
             let text = components.hour == 1 ? NSLocalizedString("hour", comment:"") : NSLocalizedString("hours", comment:"")
             
-            hours = " \(components.hour) " + text
+            hours = " \(cHour) " + text
             
         }
         
@@ -90,11 +90,11 @@ public extension Date {
         
         if let minute = components.minute, minute > 0 {
             
-            minutes = " \(components.minute) " + (components.minute == 1 ? NSLocalizedString("minute", comment:"") : NSLocalizedString("minutes", comment:""))
+            minutes = " \(minute) " + (components.minute == 1 ? NSLocalizedString("minute", comment:"") : NSLocalizedString("minutes", comment:""))
             
-        }else {
+        } else if let second = components.second {
             
-            seconds = " \(components.second) " + (components.minute == 1 ? NSLocalizedString("second", comment:"") : NSLocalizedString("seconds", comment:""))
+            seconds = " \(second) " + (second == 1 ? NSLocalizedString("second", comment:"") : NSLocalizedString("seconds", comment:""))
             
         }
         

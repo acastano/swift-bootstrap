@@ -228,7 +228,7 @@ public extension String {
         
         if let decodedData = Data(base64Encoded:self, options:[]) {
         
-            if let string = NSString(data:decodedData, encoding:String.Encoding.utf8.rawValue) as? String {
+            if let string = String(data:decodedData, encoding:.utf8) {
                 
                 decodedString = string
                 
@@ -293,7 +293,7 @@ public extension String {
     
     public var isEmptyText: Bool {
         
-        return trimmingCharacters(in: CharacterSet.whitespaces) == ""
+        return trimmingCharacters(in: .whitespaces) == ""
         
     }
     

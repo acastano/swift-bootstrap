@@ -56,27 +56,29 @@ public final class DrawViewController: ViewController {
             
             tempDrawImage.image?.draw(in: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
             
-            UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+            let currentContext = UIGraphicsGetCurrentContext()
             
-            UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: currentPoint.x, y: currentPoint.y))
+            currentContext?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
             
-            UIGraphicsGetCurrentContext()?.setLineCap(.round)
+            currentContext?.addLine(to: CGPoint(x: currentPoint.x, y: currentPoint.y))
             
-            UIGraphicsGetCurrentContext()?.setLineWidth(brush)
+            currentContext?.setLineCap(.round)
             
-            UIGraphicsGetCurrentContext()?.setStrokeColor(red: red, green: green, blue: blue, alpha: 1.0)
+            currentContext?.setLineWidth(brush)
             
-            UIGraphicsGetCurrentContext()?.setBlendMode(.normal)
+            currentContext?.setStrokeColor(red: red, green: green, blue: blue, alpha: 1.0)
             
-            UIGraphicsGetCurrentContext()?.strokePath()
+            currentContext?.setBlendMode(.normal)
+            
+            currentContext?.strokePath()
             
             tempDrawImage.image = UIGraphicsGetImageFromCurrentImageContext()
             
             tempDrawImage.alpha = opacity
             
-            UIGraphicsEndImageContext();
+            UIGraphicsEndImageContext()
             
-            lastPoint = currentPoint;
+            lastPoint = currentPoint
             
         }
         
@@ -93,19 +95,21 @@ public final class DrawViewController: ViewController {
             
             tempDrawImage.image?.draw(in: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
             
-            UIGraphicsGetCurrentContext()?.setLineCap(CGLineCap.round)
+            let currentContext = UIGraphicsGetCurrentContext()
             
-            UIGraphicsGetCurrentContext()?.setLineWidth(brush)
+            currentContext?.setLineCap(.round)
             
-            UIGraphicsGetCurrentContext()?.setStrokeColor(red: red, green: green, blue: blue, alpha: opacity)
+            currentContext?.setLineWidth(brush)
             
-            UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+            currentContext?.setStrokeColor(red: red, green: green, blue: blue, alpha: opacity)
             
-            UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+            currentContext?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+            ()
+            currentContext?.addLine(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
             
-            UIGraphicsGetCurrentContext()?.strokePath()
+            currentContext?.strokePath()
             
-            UIGraphicsGetCurrentContext()?.flush()
+            currentContext?.flush()
             
             tempDrawImage.image = UIGraphicsGetImageFromCurrentImageContext()
             

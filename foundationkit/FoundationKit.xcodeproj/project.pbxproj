@@ -43,8 +43,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4176506F1E4C841600D65E87 /* watchOSReleaseBuildConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4176506D1E4C841600D65E87 /* watchOSReleaseBuildConfig.xcconfig */; };
-		417650701E4C841600D65E87 /* watchOSDebugBuildConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4176506E1E4C841600D65E87 /* watchOSDebugBuildConfig.xcconfig */; };
+		41024AE71E9133A6007F2C62 /* Date+Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E14EF1E7AA483001DA582 /* Date+Formatters.swift */; };
+		41024AE81E9133D1007F2C62 /* Date+Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E14EF1E7AA483001DA582 /* Date+Formatters.swift */; };
+		41024AE91E91350C007F2C62 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E52C1D2BFAC7009BA2FD /* String+Crypto.swift */; };
 		417E14F01E7AA483001DA582 /* Date+Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E14EF1E7AA483001DA582 /* Date+Formatters.swift */; };
 		83110BB01D2FC7340055A23C /* CacheUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83110B831D2FC7260055A23C /* CacheUtilsTests.swift */; };
 		83110BB11D2FC7340055A23C /* CacheUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83110B831D2FC7260055A23C /* CacheUtilsTests.swift */; };
@@ -790,7 +791,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				TargetAttributes = {
 					832057D51D2CF92700399384 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -853,8 +854,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				417650701E4C841600D65E87 /* watchOSDebugBuildConfig.xcconfig in Resources */,
-				4176506F1E4C841600D65E87 /* watchOSReleaseBuildConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -940,6 +939,7 @@
 				83A3E5311D2BFAC7009BA2FD /* CacheUtils.swift in Sources */,
 				83A78EA11D9D717C00F82A82 /* TouchIdAttributes.swift in Sources */,
 				83A78E931D9D613A00F82A82 /* TouchIdUtils.swift in Sources */,
+				41024AE91E91350C007F2C62 /* String+Crypto.swift in Sources */,
 				83A3E5401D2BFAC7009BA2FD /* NSObject+PropertyListing.m in Sources */,
 				83A3E5391D2BFAC7009BA2FD /* Int+Utils.swift in Sources */,
 				83A3E5371D2BFAC7009BA2FD /* ErrorTranslator.swift in Sources */,
@@ -968,6 +968,7 @@
 			files = (
 				83C149E81DCA4EE6007E510D /* Double+Utils.swift in Sources */,
 				832057821D2C0D2000399384 /* NSURL+Utils.swift in Sources */,
+				41024AE81E9133D1007F2C62 /* Date+Formatters.swift in Sources */,
 				8320577A1D2C0D2000399384 /* Date+Utils.swift in Sources */,
 				832057791D2C0D2000399384 /* NSAttributedString+Utils.swift in Sources */,
 				832057841D2C0D2000399384 /* String+Utils.swift in Sources */,
@@ -993,6 +994,7 @@
 			files = (
 				83C149E91DCA4EE6007E510D /* Double+Utils.swift in Sources */,
 				832057951D2C0EBC00399384 /* Int+Utils.swift in Sources */,
+				41024AE71E9133A6007F2C62 /* Date+Formatters.swift in Sources */,
 				832057A01D2C0ED100399384 /* String+Utils.swift in Sources */,
 				8320579C1D2C0EC300399384 /* NSObject+PropertyListing.m in Sources */,
 				8320578E1D2C0E8400399384 /* CacheUtils.swift in Sources */,

@@ -37,7 +37,7 @@ public final class Keychain: NSObject {
         
         if let data = getData(key) {
             
-            value = NSString(data: data, encoding: String.Encoding.utf8.rawValue) as? String
+            value = String(data: data, encoding: .utf8)
             
         }
         

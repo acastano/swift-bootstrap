@@ -45,7 +45,7 @@ public class TouchIdUtils {
                         
                         completion(isSuccess, nil)
                         
-                    } else if let err = error as? NSError,
+                    } else if let err = error as NSError?,
                         err.code == LAError.userCancel.rawValue {
                         
                         completion(false, nil)

@@ -2,6 +2,11 @@
 
 # README #
 
+## Prerequisites ##
+
+* Xcode 8.3 
+* Swift 3.1
+
 ## Coding standards ##
 
 ### Naming ###
