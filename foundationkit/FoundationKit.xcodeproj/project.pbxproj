@@ -45,7 +45,6 @@
 /* Begin PBXBuildFile section */
 		41024AE71E9133A6007F2C62 /* Date+Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E14EF1E7AA483001DA582 /* Date+Formatters.swift */; };
 		41024AE81E9133D1007F2C62 /* Date+Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E14EF1E7AA483001DA582 /* Date+Formatters.swift */; };
-		41024AE91E91350C007F2C62 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E52C1D2BFAC7009BA2FD /* String+Crypto.swift */; };
 		417E14F01E7AA483001DA582 /* Date+Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E14EF1E7AA483001DA582 /* Date+Formatters.swift */; };
 		83110BB01D2FC7340055A23C /* CacheUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83110B831D2FC7260055A23C /* CacheUtilsTests.swift */; };
 		83110BB11D2FC7340055A23C /* CacheUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83110B831D2FC7260055A23C /* CacheUtilsTests.swift */; };
@@ -939,7 +938,6 @@
 				83A3E5311D2BFAC7009BA2FD /* CacheUtils.swift in Sources */,
 				83A78EA11D9D717C00F82A82 /* TouchIdAttributes.swift in Sources */,
 				83A78E931D9D613A00F82A82 /* TouchIdUtils.swift in Sources */,
-				41024AE91E91350C007F2C62 /* String+Crypto.swift in Sources */,
 				83A3E5401D2BFAC7009BA2FD /* NSObject+PropertyListing.m in Sources */,
 				83A3E5391D2BFAC7009BA2FD /* Int+Utils.swift in Sources */,
 				83A3E5371D2BFAC7009BA2FD /* ErrorTranslator.swift in Sources */,
