@@ -115,6 +115,9 @@
 		832057A01D2C0ED100399384 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E52D1D2BFAC7009BA2FD /* String+Utils.swift */; };
 		832057A11D2C0ED700399384 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E52F1D2BFAC7009BA2FD /* Keychain.swift */; };
 		832057A21D2C0ED800399384 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E52F1D2BFAC7009BA2FD /* Keychain.swift */; };
+		835E6B151EA61877004A8D4C /* Dictionary+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E6B141EA61877004A8D4C /* Dictionary+Utils.swift */; };
+		835E6B161EA618B4004A8D4C /* Dictionary+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E6B141EA61877004A8D4C /* Dictionary+Utils.swift */; };
+		835E6B171EA618B5004A8D4C /* Dictionary+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E6B141EA61877004A8D4C /* Dictionary+Utils.swift */; };
 		83A3E50F1D2BFA95009BA2FD /* FoundationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 83A3E50E1D2BFA95009BA2FD /* FoundationKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83A3E5301D2BFAC7009BA2FD /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E5121D2BFAC7009BA2FD /* Blocks.swift */; };
 		83A3E5311D2BFAC7009BA2FD /* CacheUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E5141D2BFAC7009BA2FD /* CacheUtils.swift */; };
@@ -189,6 +192,7 @@
 		83110B971D2FC7260055A23C /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		83110B9A1D2FC7260055A23C /* DeviceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTests.swift; sourceTree = "<group>"; };
 		83110B9C1D2FC7260055A23C /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		835E6B141EA61877004A8D4C /* Dictionary+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Utils.swift"; sourceTree = "<group>"; };
 		8368104F1D3791D1001EB153 /* iOSBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSBuildConfig.xcconfig; sourceTree = "<group>"; };
 		836810501D3791D1001EB153 /* iOSDebugBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSDebugBuildConfig.xcconfig; sourceTree = "<group>"; };
 		836810511D3791D1001EB153 /* iOSReleaseBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOSReleaseBuildConfig.xcconfig; sourceTree = "<group>"; };
@@ -564,6 +568,7 @@
 				83A3E5231D2BFAC7009BA2FD /* Date+Utils.swift */,
 				83A3E5241D2BFAC7009BA2FD /* DateConstants.swift */,
 				417E14EF1E7AA483001DA582 /* Date+Formatters.swift */,
+				835E6B141EA61877004A8D4C /* Dictionary+Utils.swift */,
 				83A3E5251D2BFAC7009BA2FD /* NSMutableData+Helpers.swift */,
 				83A3E5261D2BFAC7009BA2FD /* NSNumber+Utils.swift */,
 				83A3E5271D2BFAC7009BA2FD /* NSObject+PropertyListing.h */,
@@ -950,6 +955,7 @@
 				83A3E5421D2BFAC7009BA2FD /* NSObject+Utils.swift in Sources */,
 				83A3E5301D2BFAC7009BA2FD /* Blocks.swift in Sources */,
 				83A3E53A1D2BFAC7009BA2FD /* NSAttributedString+Utils.swift in Sources */,
+				835E6B151EA61877004A8D4C /* Dictionary+Utils.swift in Sources */,
 				83A3E5361D2BFAC7009BA2FD /* UIDeviceHardware.m in Sources */,
 				83A3E5411D2BFAC7009BA2FD /* NSObject+Threading.swift in Sources */,
 				83A3E5331D2BFAC7009BA2FD /* Device.swift in Sources */,
@@ -971,6 +977,7 @@
 				832057791D2C0D2000399384 /* NSAttributedString+Utils.swift in Sources */,
 				832057841D2C0D2000399384 /* String+Utils.swift in Sources */,
 				832057A11D2C0ED700399384 /* Keychain.swift in Sources */,
+				835E6B171EA618B5004A8D4C /* Dictionary+Utils.swift in Sources */,
 				832057771D2C0CFC00399384 /* Array+Utils.swift in Sources */,
 				8320577C1D2C0D2000399384 /* NSMutableData+Helpers.swift in Sources */,
 				832057861D2C0DA200399384 /* CacheUtils.swift in Sources */,
@@ -997,6 +1004,7 @@
 				8320579C1D2C0EC300399384 /* NSObject+PropertyListing.m in Sources */,
 				8320578E1D2C0E8400399384 /* CacheUtils.swift in Sources */,
 				832057941D2C0EBC00399384 /* Array+Utils.swift in Sources */,
+				835E6B161EA618B4004A8D4C /* Dictionary+Utils.swift in Sources */,
 				832057A21D2C0ED800399384 /* Keychain.swift in Sources */,
 				832057921D2C0EA100399384 /* UIDeviceHardware.m in Sources */,
 				832057971D2C0EBC00399384 /* Date+Utils.swift in Sources */,
