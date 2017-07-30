@@ -28,11 +28,19 @@ open class NetworkImageView: ImageView {
     
     public func addPlaceholderImage(_ image:UIImage?) {
         
-        let size = image != nil ? image!.size : CGSize.zero
+        let size = image != nil ? image!.size : .zero
         
         setupPlaceholder(size)
         
         placeholder.image = image
+        
+    }
+    
+    public func addPlaceholderImage(_ image:UIImage?, contentMode: UIViewContentMode) {
+        
+        addPlaceholderImage(image)
+        
+        placeholder.contentMode = contentMode
         
     }
     
